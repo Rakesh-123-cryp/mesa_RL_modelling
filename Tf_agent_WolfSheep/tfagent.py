@@ -4,6 +4,8 @@ from tf_agents.agents import DqnAgent
 from keras.optimizers import Adam
 import mesa
 from Tf_agent_WolfSheep.random_walk import RandomWalker
+from wrappers.Wrapper import Agentwrapper
+
 
 # Tensorflow Agents for Wolf and Sheep
 wolf_network = QNetwork(

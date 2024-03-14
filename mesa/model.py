@@ -72,7 +72,7 @@ class Model:
         self.schedule = None
         self.current_id = 0
         self.agents_: defaultdict[type, dict] = defaultdict(dict)
-
+        self.rewards = []
         self._steps: int = 0
         self._time: TimeT = 0  # the model's clock
 
@@ -113,7 +113,7 @@ class Model:
         """
         while self.running:
             self.step()
-
+        
     def step(self) -> None:
         """A single step. Fill in here."""
 
